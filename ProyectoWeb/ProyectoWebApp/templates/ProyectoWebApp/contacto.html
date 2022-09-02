@@ -1,0 +1,16 @@
+{% extends "ProyectoWebApp/base.html" %}
+{% load static %}
+{%block content %}
+
+
+<h1 style="color:blueviolet"> 
+    Bienvenidos al Concesionario Pepito
+<h1> 
+
+<h2><FONT COLOR="white">Estamos viendo la pagina a dia : {{actualidad.day}}/{{actualidad.month}}</FONT> </h2>
+       
+ <B><FONT COLOR="white">Este Concesionario esta a cargo de {{nombre_persona.upper}} {{apellido_persona.upper}} </FONT> </B>
+        
+
+
+{% endblock %}
