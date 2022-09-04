@@ -24,7 +24,7 @@
   
     <h2 class="site-heading text-center text-white d-none d-lg-block">
       
-        <span class="site-heading-lower"> PEPITO </span>
+        <span class="site-heading-lower"> "NOMBRE" </span>
         
       </h2>
 
@@ -38,16 +38,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active px-lg-4">
+          <li class="nav-item {% if request.path == '/' %} active {% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Inicio' %}">Inicio</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item {% if request.path == '/servicios' %} active {% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Servicios' %}">Servicios</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item {% if request.path == '/tienda' %} active {% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Tienda' %}">Tienda</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item {% if request.path == '/contacto' %} active {% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contacto</a>
           </li>
          
