@@ -2,9 +2,16 @@
 {% load static %}
 {%block content %}
 
+    {% for Servicio in servicios %}
 
-<div>
-    <p> Servicios </p>
-</div>
+<div><p>
 
+    <h2 style="color:aliceblue;">{{Servicio.titulo}}</h2>
+
+    <p style="color:aliceblue;">{{Servicio.contenido}}</p>
+    <p> <img src="{{Servicio.img.url}}">    </p>
+
+</p></div>
+
+    {% endfor %}
 {% endblock %}
